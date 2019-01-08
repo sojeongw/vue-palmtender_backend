@@ -1,0 +1,20 @@
+@import "utils";
+
+.list-template {
+  .lists {
+    height: calc(100vh - 4rem); // 페이지 높이에서 EditorHeader 크기 빼기
+    display: flex;
+    position: relative; // separator의 위치 설정을 위하여 relative로 설정
+    .list {
+      overflow-y: auto; // 너무 많이 줄이면 스크롤바가 나타나게 해줍니다.
+    }
+    @include media("<medium") {
+      .restrMap {
+        flex: 1 !important;
+      }
+      .restrList {
+        display: none;
+      }
+    }
+  }
+}

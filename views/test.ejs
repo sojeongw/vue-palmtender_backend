@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+		
+		<title>TEST PAGE</title>
+		
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+    	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+	</head>
+	<body>
+		
+        <div class="container">			
+						
+			<div class="col-sm-6 col-sm-offset-3">
+                
+			    <h1><span class="fa fa-sign-in"></span>주문 테스트</h1>
+                
+                <% if (message.length > 0) { %>
+			        <div class="alert alert-danger"><%= message %></div>
+			    <% } %>
+			     <form action="/test" method="post" >
+			        <div class="form-group">
+			            <label>테이블 번호</label>
+                        <%if(tableNum.length > 0){%>
+                        
+                            <input type="text" class="form-control" name="tableNum" value=<%=tableNum%>>
+
+                        <%}else{%>
+                            <input type="text" class="form-control" name="tableNum">
+                        <%}%>
+                        
+                        <label>메뉴이름1</label>
+                        <input type="number" class="form-control" name= "menu1ea">
+                       
+			        </div>
+                     
+            
+			        
+			
+			        <button type="submit" class="btn btn-warning btn-lg">주문하기</button>
+                </form>
+			
+		          <br><br><a href='/'>HOME</a>
+			    
+                
+			</div>
+			
+		</div>	
+        
+	</body>
+</html>
+

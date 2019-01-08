@@ -1,0 +1,19 @@
+@import "utils";
+
+.menu-wrapper {
+  height: calc(100vh - 6rem);
+  overflow-y: auto;
+  .menu-list {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+}
+
+.menu-photo {
+  img {
+    width: 110px;
+    float: left;
+    padding-right: 1rem;
+  }
+}

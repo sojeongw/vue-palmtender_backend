@@ -1,0 +1,41 @@
+@import "utils";
+
+.currentList {
+  .list-items {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.listItem {
+  flex: 1; // 자신에게 주어진 영역을 다 채우기
+  // float: left;
+  .small-info {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+  }
+  ul {
+    margin: 10px;
+  }
+  li {
+    display: inline;
+    padding-right: 2rem;
+    padding-bottom: 0rem;
+  }
+  .restrPhoto {
+    float: left;
+    width: 200px;
+    padding-right: 1rem;
+  }
+  .restrCategory,
+  .restrConcept {
+    font-size: 0.7rem;
+    padding-right: 1rem;
+  }
+  .restrName {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0px;
+  }
+}
